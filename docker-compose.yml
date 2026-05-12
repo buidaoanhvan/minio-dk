@@ -2,6 +2,7 @@ services:
   minio:
     image: quay.io/minio/aistor/minio:latest
     container_name: minio
+    restart: always
     ports:
       - "9000:9000"
       - "9001:9001"
